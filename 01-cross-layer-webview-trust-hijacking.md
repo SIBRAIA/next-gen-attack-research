@@ -13,6 +13,9 @@ That assumption becomes dangerous when JavaScript running inside the page is all
 ```java
 addJavascriptInterface(...)
 ```
+---
+
+## 1. The Entry Point
 
 In the sample analyzed for this research, the WebView is not used only for rendering remote content.
 
@@ -730,3 +733,21 @@ It is:
 > What can WebView content do inside the application if that content becomes untrusted?
 
 That is the real trust boundary.
+
+---
+
+## References
+
+- [Android WebView Security](https://developer.android.com/privacy-and-security/risks/cross-app-scripting)
+- [WebView.addJavascriptInterface](https://developer.android.com/reference/android/webkit/WebView#addJavascriptInterface(java.lang.Object,%20java.lang.String))
+- [OWASP MASTG — WebViews](https://mas.owasp.org/MASTG/)
+
+---
+
+## Next Research
+
+### [Part II — Remote-Controlled Dynamic Code Loading in Android](./02-remote-controlled-dynamic-code-loading.md)
+
+Part II moves below the WebView layer and examines in-memory DEX loading,
+runtime ClassLoader mutation, and the distinction between mitigation avoidance
+and restriction bypass.
