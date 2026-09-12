@@ -730,36 +730,3 @@ It is:
 > What can WebView content do inside the application if that content becomes untrusted?
 
 That is the real trust boundary.
-
----
-
-## Next
-
-### Part II — Remote-Controlled Dynamic Code Loading in Android
-
-The next part moves below the WebView layer and into the application runtime:
-
-```text
-Remote Payload
-      ↓
-DEX Bytes
-      ↓
-ByteBuffer
-      ↓
-InMemoryDexClassLoader
-      ↓
-Runtime Class Loading
-      ↓
-Application Runtime
-```
-
-Part II examines the distinction between:
-
-```text
-Dynamic Code Loading
-Mitigation Avoidance
-Restriction Bypass
-Runtime ClassLoader Mutation
-```
-
-and how related techniques appear in modern Android threat activity.
