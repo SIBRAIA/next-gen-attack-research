@@ -10,7 +10,7 @@
 **Classification:** Defensive Security Research · Technical Reference for Responsible Disclosure
 **Review basis:** Analyzed sample · Official Android documentation · Cited public threat intelligence  
 **Evidence current through:** 13 September 2026
-
+ 
 ---
 
 ## Executive Summary
